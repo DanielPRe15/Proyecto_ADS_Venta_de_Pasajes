@@ -14,7 +14,8 @@
 
 <header class="header">
    	<div class="img-logo" >
-   	<img src="/imagenes/logo-LP.png" alt="logo" class="img-logo"/>
+   	<img src="imagenes/logo-LP.png" alt="logo" class="img-logo"/>  
+   	<!-- <a class="navbar-brand" href="#"><img class="logo" src="imagenes/logo-LP.png" alt="..."></a> -->
    	</div>
     
     <input type="checkbox" id="check">
@@ -36,7 +37,7 @@
     	<a href="#" class="btn"><button>Iniciar Sesion</button></a>
   
     	<div class="img-usu" >
-    		<img src="/imagenes/logo-LP.png" alt="usuario">
+    		<img src="imagenes/logo-LP.png" alt="usuario">
     	</div>
     
     

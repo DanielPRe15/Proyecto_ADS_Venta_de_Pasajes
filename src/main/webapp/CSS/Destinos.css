@@ -1,0 +1,215 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  
+    width: 100%;
+   
+}
+
+/*HEADER*/
+header{
+	width:100%;
+	height: 100px;
+	background: #8DD8D3;
+	padding: 5px 80px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	
+}
+
+.menu a{
+	color: #004F7A;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 0 20px;
+	transition: 0.4s;
+	font-size: 18px;
+	font-family: sans-serif;
+	
+}
+
+.img-logo{
+	margin-right: 5px;
+}
+
+
+.header .btn button{
+	background-color: white;
+	font-weight: 700;
+	color: #004F7A;
+	padding: 9px 25px;
+	background: #fff;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s;
+	position: absolute;
+	right: 110px; top:30px;
+	
+	
+}
+
+.header .btn button:hover{
+	background-color: #F0F0F0;
+	color: #004F7A;
+	transform: scale(1,1);
+	
+	
+}
+
+
+.img-usu{
+	position: absolute;
+	right: 40px; top:17px;
+}
+
+
+
+
+.mostrar-menu, 
+.ocultar-menu{
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	transition: 0.4s;
+}
+
+.mostrar-menu{
+	order:1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.ocultar-menu:hover{
+	color:gray;
+}
+
+#check{
+	display: none;
+}
+
+.titulo{
+	font-size: 35px;
+	font-family: inherit;
+	color: #004F7A;
+	position: absolute;
+	top:160px;
+	left: 160px;
+	
+	
+}
+
+
+h1{
+    color: #020202;
+    font-size: 90px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 10px;
+
+}
+
+.conteiner{
+    
+    background-image: url(https://www.boletomachupicchu.com/gutblt/wp-content/uploads/2023/04/machu-picchu-informacion-full.jpg);
+    
+	
+	background-repeat:repeat;
+    background-size: contain;
+	
+	
+    width: 100%;
+}
+.destinos{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: start;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 60px;
+
+}
+.destino {
+    margin: 10px;
+    padding: 10px;
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+   
+}
+
+.destinos img{
+    
+    width: 100%;
+    padding: 20px;
+   
+   
+}
+.destinos p{
+    
+    
+    margin: 20PX;
+    text-align: justify;
+    
+    
+}
+
+.muestra-destino1{
+    
+    position: absolute;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 1px 10px rgba(131, 131, 131, 0.2);
+    top: 245px;
+ 
+    margin-left:1050px;
+    height: 180vh;
+    width: 40%;
+} 
+
+.muestra-destino2, .muestra-destino3, .muestra-destino4, .muestra-destino5, .muestra-destino6, .muestra-destino7, .muestra-destino8,.muestra-destino9{
+
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 1px 10px rgba(131, 131, 131, 0.2);
+    top: 180px;
+
+    margin-left:1020px;
+    height: 200vh;
+    width: 43%;
+}   
+.muestra-destino1 img, .muestra-destino2 img, .muestra-destino3 img, .muestra-destino4 img,.muestra-destino5 img, .muestra-destino6 img,.muestra-destino7 img, .muestra-destino8 img,.muestra-destino9 img{
+    width: 90%;
+    margin: 20px;
+}
+
+.muestra-destino1 h3, .muestra-destino2 h3, .muestra-destino3 h3, .muestra-destino4 h3,.muestra-destino5 h3, .muestra-destino6 h3,.muestra-destino7 h3, .muestra-destino8 h3,.muestra-destino9 h3{
+    font-size: 60px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.muestra-destino1 p, .muestra-destino2 p, .muestra-destino3 p, .muestra-destino4 p,.muestra-destino5 p, .muestra-destino6 p,.muestra-destino7 p, .muestra-destino8 p,.muestra-destino9 p{
+    font-size: 20px;
+    text-align: justify;
+    
+    
+    margin-top: 20px;
+ 
+    margin-bottom: 30px;
+}
+

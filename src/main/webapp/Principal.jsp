@@ -24,11 +24,13 @@
     </label>
     <nav class="menu">
     		
-    		<a href="#">Inicio</a>
+    		<a href="Principal.jsp">Inicio</a>
     		
-    		<a href="#">Destinos</a>
+    		<a href="Destinos.jsp">Destinos</a>
   
-    		<a href="#">Paquetes</a>
+    		<a href="Usuario.jsp">usuarios</a>
+    		
+    		<a href="#">Pasajes</a>
     	  	
     	<label for="check" class="ocultar-menu">
     		&#215

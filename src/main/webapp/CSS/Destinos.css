@@ -164,6 +164,11 @@ h1{
     
 }
 
+.destinos h3{
+	font-size: 30px;
+	text-align: center;
+}
+
 .muestra-destino1{
     
     position: absolute;
@@ -178,32 +183,32 @@ h1{
     width: 40%;
 } 
 
-.muestra-destino2, .muestra-destino3, .muestra-destino4, .muestra-destino5, .muestra-destino6, .muestra-destino7, .muestra-destino8,.muestra-destino9{
 
-    display: none;
+
+.muestra-destino2, .muestra-destino3, .muestra-destino4, .muestra-destino5, .muestra-destino6, .muestra-destino7, .muestra-destino8,.muestra-destino9, .muestra-destino10, .muestra-destino11, .muestra-destino12{
     position: absolute;
     padding: 20px;
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0px 1px 10px rgba(131, 131, 131, 0.2);
-    top: 180px;
-
-    margin-left:1020px;
-    height: 200vh;
-    width: 43%;
+    top: 245px;
+ 
+    margin-left:1050px;
+    height: 180vh;
+    width: 40%;
 }   
-.muestra-destino1 img, .muestra-destino2 img, .muestra-destino3 img, .muestra-destino4 img,.muestra-destino5 img, .muestra-destino6 img,.muestra-destino7 img, .muestra-destino8 img,.muestra-destino9 img{
+.muestra-destino1 img, .muestra-destino2 img, .muestra-destino3 img, .muestra-destino4 img,.muestra-destino5 img, .muestra-destino6 img,.muestra-destino7 img, .muestra-destino8 img,.muestra-destino9 img, .muestra-destino10 img, .muestra-destino11 img, .muestra-destino12 img{
     width: 90%;
     margin: 20px;
 }
 
-.muestra-destino1 h3, .muestra-destino2 h3, .muestra-destino3 h3, .muestra-destino4 h3,.muestra-destino5 h3, .muestra-destino6 h3,.muestra-destino7 h3, .muestra-destino8 h3,.muestra-destino9 h3{
+.muestra-destino1 h3, .muestra-destino2 h3, .muestra-destino3 h3, .muestra-destino4 h3,.muestra-destino5 h3, .muestra-destino6 h3,.muestra-destino7 h3, .muestra-destino8 h3,.muestra-destino9 h3, .muestra-destino10 h3, .muestra-destino11 h3,.muestra-destino12 h3{
     font-size: 60px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-.muestra-destino1 p, .muestra-destino2 p, .muestra-destino3 p, .muestra-destino4 p,.muestra-destino5 p, .muestra-destino6 p,.muestra-destino7 p, .muestra-destino8 p,.muestra-destino9 p{
+.muestra-destino1 p, .muestra-destino2 p, .muestra-destino3 p, .muestra-destino4 p,.muestra-destino5 p, .muestra-destino6 p,.muestra-destino7 p, .muestra-destino8 p,.muestra-destino9 p, .muestra-destino10 p, .muestra-destino11 p, .muestra-destino12 p{
     font-size: 20px;
     text-align: justify;
     

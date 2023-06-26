@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<link rel="icon" type="image/jsp"  href="imagenes/logo-LP.png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link href="CSS/MenuPrincipal.css" rel="Stylesheet" >
 <script src="https://kit.fontawesome.com/7de64ba593.js" crossorigin="anonymous"></script>
@@ -19,32 +19,82 @@
    	</div>
     
     <input type="checkbox" id="check">
-    <label for="check" class="mostrar-menu">
-    	&#8801
-    </label>
+    <label for="check" class="mostrar-menu">&#8801</label>
     <nav class="menu">
     		
     		<a href="Principal.jsp">Inicio</a>
     		
     		<a href="Destinos.jsp">Destinos</a>
   
-    		<a href="Usuario.jsp">usuarios</a>
+			<a href="Pasaje.jsp">Pasajes</a>    		
     		
-    		<a href="#">Pasajes</a>
     	  	
-    	<label for="check" class="ocultar-menu">
-    		&#215
-    	</label>
+    	<label for="check" class="ocultar-menu">&#215</label>
     </nav>
     
+            <a href="#" class="btn1"> <button type="button" data-bs-toggle="modal" data-bs-target="#modalUsuario">Registrarse</button></a>
     
-    	<a href="#" class="btn"><button>Iniciar Sesion</button></a>
+    	<a href="Login.jsp" class="btn"><button>Iniciar Sesion</button></a>
   
     	<div class="img-usu" >
     		<img src="imagenes/imagen-usu.png" alt="usuario">
     	</div>
        
 </header>
+
+
+
+<div class="modal fade" id="modalUsuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      
+			  <form id="frmDocente" action="ServletUsuario?tipo=REGISTRAR" method="post">
+			  
+			  <div class="form-group">
+			    <label for="nombres" class="form-label">Nombres</label>
+			    <input type="text" class="form-control" name="nombres">
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="apellidos" class="form-label">Apellidos</label>
+			    <input type="text" class="form-control" name="apellidos">
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="dni" class="form-label">DNI</label>
+			    <input type="text" class="form-control" name="dni">
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="numero" class="form-label">Numero</label>
+			    <input type="text" class="form-control" name="numero">
+			  </div>
+			  
+			  <div class="form-group">
+			    <label for="correo" class="form-label">Correo</label>
+			    <input type="email" class="form-control" name="correo">
+			  </div>
+			  
+			  
+			    <div class="modal-footer">        
+		        <button type="submit" class="btn btn-primary">Registrar</button>
+		        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+		      </div>			  
+			</form>
+      </div>
+    </div>
+  </div>
+</div> 
+
+</div>
+
+
+
 
 <div class="contenido-cuerpo">
 

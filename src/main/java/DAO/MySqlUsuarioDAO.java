@@ -10,6 +10,8 @@ import java.util.logging.Logger;
 
 import Interface.UsuarioDAO;
 import entidad.Usuario;
+import entidad.Datos;
+
 import util.MySqlDBConexion;
 
 public class MySqlUsuarioDAO  implements UsuarioDAO{
@@ -129,6 +131,51 @@ public class MySqlUsuarioDAO  implements UsuarioDAO{
 		return lista;
 		
 		
+	}
+
+	int r=0;
+	
+	@Override
+	public int Login(Usuario usuario) {
+		 
+		Connection conn = null;
+		PreparedStatement pstm = null;
+		ResultSet rs=null;
+		String sql="select * from usuarios where correo=? and dni= ?"; 
+
+		try {
+			
+			
+			conn=MySqlDBConexion.getConexion();
+			pstm = conn.prepareStatement(sql);
+			pstm.setString(1,usuario.getCorreo());
+			pstm.setString(2,usuario.getDni());
+			rs=pstm.executeQuery();
+			while(rs.next()) {
+				r=r+1;
+			 usuario.setCorreo(rs.getString("Correo"));
+				usuario.setDni(rs.getString("Dni"));
+				
+			}
+			if(r==1) {
+				return 1;
+			}else {
+				return 0 ;
+			}
+			
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+			return r ;
+		}finally {
+			try {
+				if(pstm!= null) pstm.close();
+				if(conn!= null) conn.close();
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+			
+		}
 	}
 
 	

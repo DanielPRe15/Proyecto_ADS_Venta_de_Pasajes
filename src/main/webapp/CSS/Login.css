@@ -1,0 +1,23 @@
+@charset "ISO-8859-1";
+
+.Login-cap1{
+	width:20%;
+	heigt:20%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+	
+}
+
+.Login-txt{
+	witdh:80%;
+	heigth:80%;
+ 
+	
+}
+
+.Login-txt.input{
+	
+   witdh:60%;
+	heigth:60%;	
+}

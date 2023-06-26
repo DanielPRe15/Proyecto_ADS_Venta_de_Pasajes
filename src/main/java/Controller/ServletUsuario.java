@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import DAO.MySqlUsuarioDAO;
+import entidad.Datos;
 import entidad.Usuario;
 
 /**
@@ -18,6 +19,7 @@ import entidad.Usuario;
 @WebServlet("/ServletUsuario")
 public class ServletUsuario extends HttpServlet {
 	
+	private Usuario usu=new Usuario(); 
 	private MySqlUsuarioDAO repo = new MySqlUsuarioDAO();
 	
 	private static final long serialVersionUID = 1L;
@@ -33,18 +35,51 @@ public class ServletUsuario extends HttpServlet {
 	/**
 	 * @see HttpServlet#service(HttpServletRequest request, HttpServletResponse response)
 	 */
+    int r ;
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		String accion;
+		String accion = null;
 		accion = request.getParameter("tipo");
+		response.setContentType("text/html;charset=UTF-8");
+
 		
-		if(accion.equals("REGISTRAR"))
+		 if(accion.equals("INGRESAR")){
+			 
+			 Datos da = new Datos();
+				
+				String correo=request.getParameter("Correo");
+				String dni=request.getParameter("Dni");
+				da.correo =correo;
+				usu.setCorreo(correo);
+				usu.setDni(dni);
+				r= repo.Login(usu);
+				if(r==1) {
+					System.out.println("Bienvenido " + usu.getNombres()+ " "+ usu.getApellidos());
+					request.getRequestDispatcher("/Principal.jsp").forward(request, response);
+				}
+				else {
+					request.getRequestDispatcher("/Login.jsp").forward(request, response);
+				}
+						
+			 } else
+		if(accion.equals("REGISTRAR")) {
+			
 			registrarUsuario(request, response);
-		else 
-			if(accion.equals("LISTAR"))
+		}else 
+			if(accion.equals("LISTAR")) {
+				
 				listarUsuarios(request, response);
+				
+		} 
+			
 		
-	}
+		
+				
+				
+		
+		 }
+	
+	
 
 	private void listarUsuarios(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -52,7 +87,7 @@ public class ServletUsuario extends HttpServlet {
 		
 		request.setAttribute("listaUsuarios", data);
 		
-		request.getRequestDispatcher("/Usuario.jsp").forward(request, response);
+		request.getRequestDispatcher("Usuario.jsp").forward(request, response);
 	}
 
 	private void registrarUsuario(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -79,5 +114,7 @@ public class ServletUsuario extends HttpServlet {
 		
 		
 	}
+	
+	
 
 }

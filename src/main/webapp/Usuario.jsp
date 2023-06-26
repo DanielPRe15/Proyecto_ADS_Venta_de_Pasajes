@@ -8,10 +8,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="ISO-8859-1">
+<link rel="icon" type="image/jsp"  href="imagenes/logo-LP.png">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 <link href="CSS/Usuario.css" rel="Stylesheet" >
 <link href="CSS/MenuPrincipal.css" rel="Stylesheet" >
+
 <title>CRUD USUARIO</title>
 </head>
 <body>
@@ -30,19 +32,19 @@
     		<a href="Principal.jsp">Inicio</a>
     		
     		<a href="Destinos.jsp">Destinos</a>
-  
-    		<a href="Usuario.jsp">usuarios</a>
     		
-    		<a href="#">Pasajes</a>
+    		<a href="Usuario.jsp">Pasajes</a>
     	  	
     	<label for="check" class="ocultar-menu">
-    		&#215
+    		
     	</label>
     </nav>
     
-    
-    	<a href="#" class="btn"><button>Iniciar Sesion</button></a>
-  
+      
+        <a href="#" class="btn1"> <button type="button" data-bs-toggle="modal" data-bs-target="#modalUsuario">Registrarse</button></a>
+
+    	<a href="Login.jsp" class="btn"> <button>Iniciar Sesion</button></a>
+
     	<div class="img-usu" >
     		<img src="imagenes/imagen-usu.png" alt="usuario">
     	</div>
@@ -52,13 +54,13 @@
 
 <div class="container">
 
-  <h2 class="text-center mt-3" >Listado Usuarios</h2>
+  <h2 class="text-center mt-3" >Compra tu pasaje</h2>
   
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#modalUsuario">
-  Nuevo Usuario
-</button>
+
   <!-- Modal -->
+  
+
 <div class="modal fade" id="modalUsuario" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -67,6 +69,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
+      
 			  <form id="frmDocente" action="ServletUsuario?tipo=REGISTRAR" method="post">
 			  
 			  <div class="form-group">
@@ -107,45 +110,9 @@
 
 </div>
 
-<!--  <table id="example" class="table table-striped" style="width:100%">
-		        <thead>
-		            <tr>
-		                <th>CÓDIGO</th>
-		                <th>NOMBRES</th>
-		                <th>APELLIDOS</th>
-		                <th>DNI</th>
-		                <th>NUMERO</th>
-		                <th>CORREO</th>
-		                <th></th>
-		                <th></th>
-		              
-		            </tr>
-		        </thead>
-		        <tbody> -->
-		       		<!-- Abrir la etiqueta forEach 
-		       		atributo item sirve para almacenar el atributo que viene del servlet
-		       		atributo var, sirve para crear un objeto que almacene el valor actual segun la vuelta del for
-		       		--> 
-					 <!-- <c:forEach items="${requestScope.listaUsuarios}" var="row">      
-		
-		            <tr>
-		                <td>${row.idUsuario}</td>
-		                <td>${row.nombres}</td>
-		                <td>${row.apellidos}</td>
-		                <td>${row.dni}</td>
-		                <td>${row.numero}</td>
-		                <td>${row.correo}</td>
-		                <td><button type="button" class="btn btn-success">BUSCAR</button></td>
-		                <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
-		                
 
-		             
-		            </tr>
-		            
-		            </c:forEach>  
-		            
-		        </tbody>
-		    </table>  -->
+
+
 
 
 		<div class="mt-5 , container">
@@ -153,39 +120,7 @@
 			    
 			    
 			    
-<table class="table">
-  <thead>
-    <tr>
-		                <th>CÓDIGO</th>
-		                <th>NOMBRES</th>
-		                <th>APELLIDOS</th>
-		                <th>DNI</th>
-		                <th>NUMERO</th>
-		                <th>CORREO</th>
-		                <th></th>
-		                <th></th>
-		              
-		            </tr>
-  </thead>
-  <tbody>
-  	<c:forEach items="${requestScope.listaUsuarios}" var="row"> 
-  
-    			<tr>
-		                <td>${row.idUsuario}</td>
-		                <td>${row.nombres}</td>
-		                <td>${row.apellidos}</td>
-		                <td>${row.dni}</td>
-		                <td>${row.numero}</td>
-		                <td>${row.correo}</td>
-		                <td><button type="button" class="btn btn-success">BUSCAR</button></td>
-		                <td><button type="button" class="btn btn-danger">ELIMINAR</button></td>
-		                
 
-		             
-		            </tr>
-		             </c:forEach>  
-  </tbody>
-</table>
 		 
 		 </div>
 

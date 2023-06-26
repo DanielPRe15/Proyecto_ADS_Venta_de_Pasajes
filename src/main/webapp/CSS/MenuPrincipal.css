@@ -44,12 +44,37 @@ header{
 	cursor: pointer;
 	transition: all 0.3s;
 	position: absolute;
-	right: 110px; top:30px;
+		right: 110px; top:40px;
 	
 	
 }
 
+.header .btn1 button{
+	background-color: white;
+	font-weight: 700;
+	color: #004F7A;
+	padding: 9px 25px;
+	background: #fff;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s;
+	position: absolute;
+		right: 300px; top:40px;
+	
+	
+}
+
+
+
 .header .btn button:hover{
+	background-color: #F0F0F0;
+	color: #004F7A;
+	transform: scale(1,1);
+	
+}
+
+.header .btn1 button:hover{
 	background-color: #F0F0F0;
 	color: #004F7A;
 	transform: scale(1,1);

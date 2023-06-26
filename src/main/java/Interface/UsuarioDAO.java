@@ -10,6 +10,6 @@ public interface UsuarioDAO {
 	public int actualizar(Usuario usuario);
 	public int eliminar(int idUsuario);
 	public List<Usuario> listaUsuario();
-
+    public int Login(Usuario usuario);
 	
 }

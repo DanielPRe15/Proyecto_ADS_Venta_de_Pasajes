@@ -257,6 +257,23 @@ $(document).ready(function () {
     			}
     		},
     		
+    		ida:{
+    			validators:{
+    				notEmpty:{
+    					message:'Campo fecha de ida es obligatorio'
+    					
+    				}
+    			}
+    		},
+    		
+    		retorno:{
+    			validators:{
+    				notEmpty:{
+    					message:'Campo fecha de retorno es obligatorio'
+    					
+    				}
+    			}
+    		},
     		
     		
     		

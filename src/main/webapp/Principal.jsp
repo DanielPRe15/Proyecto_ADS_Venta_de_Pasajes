@@ -102,75 +102,6 @@
 
 <img alt="principal" src="imagenes/principal.png">
 
-<div class="titulo" ><h3>Busca tu Pasaje:</h3></div>
-
-<section id="cuerpo" >
-	
-<div class="origen">
-	<h4>Origen</h4>
-	
-	<select name="origen" class="seleccionar">
-	<option value="lima" selected >Lima</option>
-	<option value="abancay" >Abancay</option>
-	<option value="arequipa">Arequipa</option>
-	<option value="moquegua">Moquegua</option>
-	<option value="piura">Piura</option>
-	<option value="tumbes">Tumbes</option>
-	<option value="chiclayo">Chiclayo</option>
-	<option value="trujillo">Trujillo</option>
-	<option value="chimbote">Chimbote</option>
-	<option value="cuzco">Cuzco</option>
-	<option value="tacna">Tacna</option>
-	<option value="mancora">Mancora</option>	
-	</select>
-</div>
-	
-<div class="destino">
-	
-	<h4>Destino</h4>
-	
-	<select name="destino" class="seleccionar">
-	<option value="lima">Lima</option>
-	<option value="abancay" >Abancay</option>
-	<option value="arequipa"  selected >Arequipa</option>
-	<option value="moquegua">Moquegua</option>
-	<option value="piura">Piura</option>
-	<option value="tumbes">Tumbes</option>
-	<option value="chiclayo">Chiclayo</option>
-	<option value="trujillo">Trujillo</option>
-	<option value="chimbote">Chimbote</option>
-	<option value="cuzco">Cuzco</option>
-	<option value="tacna">Tacna</option>
-	<option value="mancora">Mancora</option>	
-	</select>
-	
-</div>
-
-<div class="fecha-ida">
-
-	<h4>Fecha de Ida</h4>
-	
-	<input placeholder="Fecha ida"  type="date" value="2023-05-20"  class="seleccionar">
-
-</div>
-
-<div class="fecha-vuelta">
-
-	<h4>Fecha de Retorno</h4>
-	
-	<input placeholder="Fecha ida"  type="date" value="2023-05-25" class="seleccionar" >
-
-</div>
-
-
-<button type="submit" class="btn-buscar">
-<span>Buscar</span>
-<a href="#"class="boton"><i class="fa-solid fa-magnifying-glass"></i></a>
-</button>
-
-
-</section>
-
 
 <section id="cuerpo-imagenes" >
 
@@ -246,6 +177,86 @@
         El Paseo Cívico de Tacna se encuentra en su centro y alberga la Catedral 
         de Tacna, de estilo neorrenacentista. Cerca, está el monumento Arco Parabólico,
          dedicado a los soldados de la Guerra del Pacífico, y el Museo Histórico Regional.</p>
+
+<div class="link" ></div>
+
+</div>
+</div>
+
+</section>
+
+<section id="cuerpo-imagenes" >
+
+<div class="tarjeta">
+
+<div class="face front">
+<img alt="mancora" src="https://lp-cms-production.imgix.net/features/2018/02/PlazadeArmas_Cuzco_Peru_cs-7550a532b4d7.jpg" >
+<h3>Cuzco</h3>
+</div>
+
+<div class="face back">
+		<h3>Cuzco</h3>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
+         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
+         nulla fuga odio non aperiam eos?</p>
+
+<div class="link" ></div>
+
+</div>
+</div>
+
+
+<div class="tarjeta">
+
+<div class="face front">
+<img alt="arequipa" src="https://www.diariamenteali.com/medias/mira-todo-lo-que-trujillo-tiene-para-ti-1900Wx500H?context=bWFzdGVyfHJvb3R8MTk0NDg2fGltYWdlL2pwZWd8aDM1L2hhMC85MDc0NDI5MjMxMTM0L21pcmEtdG9kby1sby1xdWUtdHJ1amlsbG8tdGllbmUtcGFyYS10aV8xOTAwV3g1MDBIfGE1NTdjYjk1M2MwZTZmZDRkZjJiN2M0YTMxYmVmN2RhNTBlN2Y2ZmVhYzBjYzRhMGU2MWZmYzgxMjU2YWRhOGQ" >
+<h3>Trujillo</h3>
+</div>
+
+<div class="face back">
+		<h3>Trujillo</h3>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
+         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
+         nulla fuga odio non aperiam eos?</p>
+
+<div class="link" ></div>
+
+</div>
+</div>
+
+
+
+<div class="tarjeta">
+
+<div class="face front">
+<img alt="ica" src="https://www.desdeadentro.pe/wp-content/uploads/2021/11/Moquegua.jpg">
+<h3>Moquegua</h3>
+</div>
+
+<div class="face back">
+		<h3>Moquegua</h3>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
+         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
+         nulla fuga odio non aperiam eos?</p>
+
+<div class="link" ></div>
+
+</div>
+</div>
+
+
+<div class="tarjeta">
+
+<div class="face front">
+<img alt="tacna" src="https://www.peru.travel/Contenido/Evento/Imagen/pe/389/1.1/Evento/Portada%20Semana%20Chiclayo.jpg">
+<h3>Chiclayo</h3>
+</div>
+
+<div class="face back">
+		<h3>Chiclayo</h3>
+       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
+         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
+         nulla fuga odio non aperiam eos?</p>
 
 <div class="link" ></div>
 

@@ -26,13 +26,15 @@
     		
     		<a href="Destinos.jsp">Destinos</a>
   
-			<a href="Pasaje.jsp">Pasajes</a>    		
+			<a href="Pasaje.jsp">Pasajes</a> 
+			
+			<a href="#" data-bs-toggle="modal" data-bs-target="#modalUsuario">Registrarse</a>   		
     		
     	  	
     	<label for="check" class="ocultar-menu">&#215</label>
     </nav>
     
-            <a href="#" class="btn1"> <button type="button" data-bs-toggle="modal" data-bs-target="#modalUsuario">Registrarse</button></a>
+            
     
     	<a href="Login.jsp" class="btn"><button>Iniciar Sesion</button></a>
   
@@ -181,9 +183,10 @@
 
 <div class="face back">
 		<h3>Mancora</h3>
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
-         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
-         nulla fuga odio non aperiam eos?</p>
+       <p>Máncora es una ciudad turística en la región Piura, 
+       en la costa noroeste de Perú. Es conocida por su playa de 
+       arena Máncora, cuyas grandes olas atraen a los surfistas. 
+       Las playas Pocitas y Vichayito son más tranquilas.</p>
 
 <div class="link" ></div>
 
@@ -200,9 +203,9 @@
 
 <div class="face back">
 		<h3>Arequipa</h3>
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
-         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
-         nulla fuga odio non aperiam eos?</p>
+       <p>Arequipa es la capital de la época colonial de la región 
+       de Arequipa en Perú. La rodean 3 volcanes y cuenta con edificios 
+       barrocos construidos de sillar, una piedra volcánica blanca.</p>
 
 <div class="link" ></div>
 
@@ -220,9 +223,9 @@
 
 <div class="face back">
 		<h3>Ica</h3>
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
-         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
-         nulla fuga odio non aperiam eos?</p>
+       <p> Ica es uno de los destinos ideales para escaparse: esta región sureña está ubicada 
+       a (aproximadamente) 4 horas de la urbe limeña y tiene un sinnúmero de actividades, 
+       tan distintas como divertidas, para los viajeros que se aventuren a recorrer su territorio.</p>
 
 <div class="link" ></div>
 
@@ -239,9 +242,10 @@
 
 <div class="face back">
 		<h3>Tacna</h3>
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius harum 
-         molestiae iste, nihil doloribus fugiat distinctio ducimus maxime totam 
-         nulla fuga odio non aperiam eos?</p>
+       <p>Tacna es una ciudad del sur de Perú, cerca de la frontera con Chile.
+        El Paseo Cívico de Tacna se encuentra en su centro y alberga la Catedral 
+        de Tacna, de estilo neorrenacentista. Cerca, está el monumento Arco Parabólico,
+         dedicado a los soldados de la Guerra del Pacífico, y el Museo Histórico Regional.</p>
 
 <div class="link" ></div>
 

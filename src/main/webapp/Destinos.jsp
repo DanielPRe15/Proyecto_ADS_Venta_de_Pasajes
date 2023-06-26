@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,13 +32,15 @@
             <a href="Destinos.jsp">Destinos</a>
 
             <a href="Pasaje.jsp">Pasajes</a>
+            
+            <a href="#" data-bs-toggle="modal" data-bs-target="#modalUsuario">Registrarse</a> 
 
             <label for="check" class="ocultar-menu">
                 &#215
             </label>
         </nav>
 
-        <a href="#" class="btn1"> <button type="button" data-bs-toggle="modal" data-bs-target="#modalUsuario">Registrarse</button></a>
+        
 
         <a href="Login.jsp" class="btn"><button>Iniciar Sesion</button></a>
 
